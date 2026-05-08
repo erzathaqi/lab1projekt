@@ -56,7 +56,14 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [sourceFiles]
 Controllers/MenuCategoriesController.cs
-New folder/models/MenuCategory.cs
+Data/RestaurantDbContext.cs
+Migrations/
+ 20260508195153_InitialCreate.cs
+ 20260508195153_InitialCreate.Designer.cs
+ RestaurantDbContextModelSnapshot.cs
+models/
+ MenuCategory.cs
+ MenuItem.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  lab1projekt.AssemblyInfo.cs
@@ -374,8 +381,34 @@ Program.cs
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
 <NUGET>/
+ azure.core/1.38.0/lib/net6.0/Azure.Core.dll
+ azure.identity/1.11.4/lib/netstandard2.0/Azure.Identity.dll
  microsoft.aspnetcore.openapi/10.0.6/lib/net10.0/Microsoft.AspNetCore.OpenApi.dll
- microsoft.openapi/2.0.0/lib/net8.0/Microsoft.OpenApi.dll
+ microsoft.bcl.asyncinterfaces/1.1.1/ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.bcl.cryptography/9.0.0/lib/net9.0/Microsoft.Bcl.Cryptography.dll
+ microsoft.data.sqlclient/6.0.1/ref/net9.0/Microsoft.Data.SqlClient.dll
+ microsoft.entityframeworkcore.abstractions/10.0.0-preview.4.25258.110/lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+ microsoft.entityframeworkcore.relational/10.0.0-preview.4.25258.110/lib/net10.0/Microsoft.EntityFrameworkCore.Relational.dll
+ microsoft.entityframeworkcore.sqlserver/10.0.0-preview.4.25258.110/lib/net10.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+ microsoft.entityframeworkcore/10.0.0-preview.4.25258.110/lib/net10.0/Microsoft.EntityFrameworkCore.dll
+ microsoft.identity.client.extensions.msal/4.61.3/lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll
+ microsoft.identity.client/4.61.3/lib/net6.0/Microsoft.Identity.Client.dll
+ microsoft.identitymodel.abstractions/7.5.0/lib/net8.0/Microsoft.IdentityModel.Abstractions.dll
+ microsoft.identitymodel.jsonwebtokens/7.5.0/lib/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+ microsoft.identitymodel.logging/7.5.0/lib/net8.0/Microsoft.IdentityModel.Logging.dll
+ microsoft.identitymodel.protocols.openidconnect/7.5.0/lib/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+ microsoft.identitymodel.protocols/7.5.0/lib/net8.0/Microsoft.IdentityModel.Protocols.dll
+ microsoft.identitymodel.tokens/7.5.0/lib/net8.0/Microsoft.IdentityModel.Tokens.dll
+ microsoft.openapi/2.4.1/lib/net8.0/Microsoft.OpenApi.dll
+ microsoft.sqlserver.server/1.0.0/lib/netstandard2.0/Microsoft.SqlServer.Server.dll
+ swashbuckle.aspnetcore.swagger/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+ swashbuckle.aspnetcore.swaggergen/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+ swashbuckle.aspnetcore.swaggerui/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+ system.clientmodel/1.0.0/lib/net6.0/System.ClientModel.dll
+ system.identitymodel.tokens.jwt/7.5.0/lib/net8.0/System.IdentityModel.Tokens.Jwt.dll
+ system.memory.data/1.0.2/lib/netstandard2.0/System.Memory.Data.dll
+ system.security.cryptography.pkcs/9.0.0/lib/net9.0/System.Security.Cryptography.Pkcs.dll
+ system.security.cryptography.protecteddata/9.0.0/lib/net9.0/System.Security.Cryptography.ProtectedData.dll
 
 [analyzerReferences]
 <DOTNET>/packs/Microsoft.AspNetCore.App.Ref/10.0.6/analyzers/dotnet/cs/
@@ -403,7 +436,11 @@ Program.cs
 <DOTNET>/sdk/10.0.202/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/microsoft.aspnetcore.openapi/10.0.6/analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll
+<NUGET>/
+ microsoft.aspnetcore.openapi/10.0.6/analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll
+ microsoft.codeanalysis.analyzers/3.11.0/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
 
 [analyzerConfigFiles]
 <DOTNET>/sdk/10.0.202/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
